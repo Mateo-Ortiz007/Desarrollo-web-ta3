@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #172033; background: #f4f7fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 85% 12%, #e6e8ff 0, transparent 35%), #f4f7fb; }
+.card { width: min(100%, 470px); padding: clamp(28px, 6vw, 46px); background: #fff; border: 1px solid #e7ebf2; border-radius: 22px; box-shadow: 0 24px 70px #26395b14; }
+.icon { width: 45px; height: 45px; display: grid; place-items: center; margin-bottom: 24px; border-radius: 14px; background: #edf0ff; color: #566ee8; font-size: 1.4rem; }
+.eyebrow { margin: 0 0 12px; color: #566ee8; font-size: .73rem; font-weight: 700; letter-spacing: .12em; }
+h1 { margin: 0; font: 800 clamp(1.8rem, 5vw, 2.35rem)/1.15 Manrope, sans-serif; letter-spacing: -.045em; }
+.intro { margin: 12px 0 28px; color: #697386; line-height: 1.6; }
+label { display: block; margin-bottom: 9px; font-size: .9rem; font-weight: 700; }
+.password-wrap { display: flex; align-items: center; gap: 8px; padding: 5px 6px 5px 13px; border: 1px solid #dce2ec; border-radius: 12px; transition: border-color .2s, box-shadow .2s; }
+.password-wrap:focus-within { border-color: #6678ed; box-shadow: 0 0 0 4px #6678ed1c; }
+input { width: 100%; min-width: 0; padding: 9px 0; border: 0; outline: 0; color: inherit; font: inherit; }
+.toggle { flex: 0 0 auto; padding: 8px 10px; border: 0; border-radius: 8px; background: #f1f3f8; color: #526078; font: 600 .8rem 'DM Sans', sans-serif; cursor: pointer; }
+.toggle:hover { background: #e9ecf4; }
+.requirements { margin: 22px 0 24px; padding: 0; border: 0; }
+.requirements legend { margin-bottom: 12px; font-size: .84rem; font-weight: 700; }
+.requirements p { display: flex; align-items: center; gap: 10px; margin: 9px 0; color: #778195; font-size: .88rem; transition: color .2s; }
+.requirements p span { width: 18px; color: #aab2c0; font-size: 1.05rem; text-align: center; }
+.requirements p.met { color: #20875d; }
+.requirements p.met span { color: #20875d; font-weight: 700; }
+.submit { width: 100%; padding: 13px 18px; border: 0; border-radius: 10px; background: #566ee8; color: #fff; font: 700 .95rem 'DM Sans', sans-serif; cursor: pointer; transition: background .2s, transform .15s; }
+.submit:hover { background: #4057ce; transform: translateY(-1px); }
+button:focus-visible { outline: 3px solid #9eabff; outline-offset: 3px; }
+.status { min-height: 1.4em; margin: 14px 0 0; color: #21845a; font-size: .9rem; text-align: center; }

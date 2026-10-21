@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">EJERCICIO 3 · DELEGACIÓN DE EVENTOS</p>
+    <h1>Un paso a la vez.</h1>
+    <p class="intro">Anota tus tareas y despeja la mente. Lo tienes.</p>
+    <form id="task-form" class="task-form">
+      <label class="sr-only" for="task-input">Nueva tarea</label>
+      <input id="task-input" name="task" type="text" placeholder="¿Qué necesitas hacer?" autocomplete="off" required>
+      <button type="submit">Agregar <span aria-hidden="true">＋</span></button>
+    </form>
+    <div class="list-heading"><h2>Mi lista</h2><span id="task-count">0 tareas</span></div>
+    <ul id="task-list" aria-label="Tareas pendientes"></ul>
+    <p id="empty-state" class="empty-state">Todavía no hay tareas. Agrega la primera arriba.</p>
+    <p class="hint"><kbd>Esc</kbd> limpia el campo de nueva tarea</p>
+  </main>
+</body>
+</html>

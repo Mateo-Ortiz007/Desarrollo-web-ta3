@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #172033; background: #f4f7fb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 15% 15%, #e3eeff 0, transparent 32%), #f4f7fb; }
+.card { width: min(100%, 560px); padding: clamp(28px, 6vw, 48px); background: #fff; border: 1px solid #e7ebf2; border-radius: 22px; box-shadow: 0 24px 70px #26395b14; }
+.eyebrow { margin: 0 0 14px; color: #566ee8; font-size: .73rem; font-weight: 700; letter-spacing: .12em; }
+h1 { margin: 0; font: 800 clamp(1.8rem, 5vw, 2.45rem)/1.15 Manrope, sans-serif; letter-spacing: -.045em; }
+.intro { margin: 12px 0 30px; color: #697386; line-height: 1.6; }
+label { display: block; margin-bottom: 9px; font-size: .9rem; font-weight: 700; }
+textarea { display: block; width: 100%; min-height: 170px; resize: vertical; padding: 16px; color: inherit; font: inherit; line-height: 1.6; border: 1px solid #dce2ec; border-radius: 13px; outline: none; transition: border-color .2s, box-shadow .2s; }
+textarea:focus { border-color: #6678ed; box-shadow: 0 0 0 4px #6678ed1c; }
+textarea::placeholder { color: #a1a9b7; }
+.form-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 16px; }
+.counter { color: #738096; font-size: .87rem; font-variant-numeric: tabular-nums; }
+.counter.warning { color: #df8615; font-weight: 700; }
+.counter.limit { color: #d83e4c; font-weight: 700; }
+button { min-width: 118px; padding: 12px 20px; border: 0; border-radius: 10px; background: #566ee8; color: #fff; font: 700 .92rem 'DM Sans', sans-serif; cursor: pointer; transition: transform .15s, background .2s; }
+button:hover:not(:disabled) { background: #4057ce; transform: translateY(-1px); }
+button:focus-visible { outline: 3px solid #9eabff; outline-offset: 3px; }
+button:disabled { background: #c5cada; cursor: not-allowed; }
+.status { min-height: 1.4em; margin: 12px 0 0; color: #21845a; font-size: .9rem; }

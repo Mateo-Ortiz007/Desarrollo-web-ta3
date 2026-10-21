@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <title>Comentario con límite</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">EJERCICIO 1 · INTERACCIÓN INPUT</p>
+    <h1>Comparte una idea</h1>
+    <p class="intro">Escribe un comentario breve. Tienes hasta 280 caracteres.</p>
+    <form id="comment-form">
+      <label for="comment">Tu comentario</label>
+      <textarea id="comment" name="comment" maxlength="280" placeholder="¿Qué tienes en mente?" aria-describedby="counter" required></textarea>
+      <div class="form-footer">
+        <span id="counter" class="counter" aria-live="polite">0/280</span>
+        <button id="publish" type="submit">Publicar</button>
+      </div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+</body>
+</html>
